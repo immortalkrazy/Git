@@ -1,0 +1,45 @@
+git init
+git status
+
+git config --global user.name "<NAME>"
+git config --global user.email "<EMAIL>"
+
+git config --local user.name "<NAME>"
+git config --local user.email "<EMAIL>"
+
+git config --edit
+git config --edit --global
+
+git add <FILE NAME>
+git add <FILE NAME> <FILE NAME>
+git add .
+
+git commit -m "<MESSAGE>"
+git commit
+
+git diff
+git diff --staged
+
+git log
+git log -p
+
+git rm <FILE NAME>
+
+git checkout -- <FILE NAME>
+git checkout  <HASH5> -- <FILE NAME>
+
+git reset HEAD <FILE NAME>
+
+git branch
+git branch <BRANCH-NAME>
+git chekout <BRANCH-NAME>
+
+git log --all --decorate --oneline --graph
+alias graph="git log --all --decorate --oneline --graph"
+graph
+
+git remote -v
+git remote add <upstream> <URL>
+git fetch <UPSTREAM>
+
+git merge <upstream> <master>
